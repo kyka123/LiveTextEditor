@@ -1,0 +1,15 @@
+<div class="wrapper" [ngClass]="{ 'wrapper--open': open }">
+  <h2 class="header header--bad">Share</h2>
+  <div class="radio-group">
+    <label><input (click)="check('Normal')" type="radio" checked="true" class="radio" name="share"
+        id="1" />Normal</label>
+    <label><input (click)="check('AsTask')" class="radio" type="radio" name="share" id="2" />As task</label>
+    <label><input (click)="check('ToAdmin')" class="radio" type="radio" name="share" id="3" />Add Admin</label>
+  </div>
+  <button (click)="copyMessage()" class="btn btn--light btn--small">
+    Copy
+  </button>
+
+</div>
+
+<app-fast-alert-box [title]="'Skopiowano do schowka'" [open]="fastAlertBoxIsOpen"></app-fast-alert-box>

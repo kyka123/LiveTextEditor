@@ -1,0 +1,11 @@
+<div class="users-list">
+  <h2 class="header header--light users-list__header">Users</h2>
+  <ul class="users-list__container">
+
+    <li *ngFor="let item of [1,2,3,4,5,2,2,2,2,2,2,6,2,2,1]; let i = index" class="users-list__user"
+      [ngClass]="{active: item == 3}">
+      {{i+1}}. Krzysztof Gronkiewicz...<button class="btn users-list__btn"><img src="assets/icons/Remove.png"></button>
+    </li>
+
+  </ul>
+</div>

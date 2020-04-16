@@ -1,0 +1,30 @@
+.wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: calc(100% - 600px);
+  height: 100%;
+}
+
+.header__title {
+  text-align: right;
+}
+
+.user-pager__header {
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  z-index: 1;
+  height: 150px;
+  margin-bottom: 20px;
+  padding: 20px;
+  box-shadow: 20px 0 10px 10px #fff;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+
+.header__input {
+  width: 300px;
+}

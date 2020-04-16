@@ -1,0 +1,12 @@
+<div class="card" (click)="goEditor()">
+  <div class="card__header">
+    <h3 class="header header--light header--small">{{details.title}}</h3>
+    <p class="card__details">{{details.created | date}}</p>
+  </div>
+  <div class="card__container">
+    <p class="card__description">
+      {{details.description}}
+    </p>
+    <button class="btn btn--bad btn--small">delete</button>
+  </div>
+</div>

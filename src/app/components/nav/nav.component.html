@@ -1,0 +1,25 @@
+<div class="wrapper">
+  <div class="nav">
+    <img class="nav__logo" src="assets/icons/Logo.png">
+    <div class="nav__main">
+      <button class="btn--image" (click)="setName('New Editor')"><img src="assets/icons/NewEditor.png"></button>
+      <button class="btn--image" (click)="setName('Settings')"><img src="assets/icons/Settings.png"></button>
+      <button class="btn--image" (click)="setName('About')"><img src="assets/icons/About.png"></button>
+    </div>
+    <img class="nav__logout" src=" assets/icons/Logout.png">
+  </div>
+  <div class="nav nav--secondary">
+    <h2 class="header header--light nav__header">{{name}}</h2>
+    <div class="nav__container">
+      <ng-container *ngIf="name == 'Settings'">
+        <app-settings></app-settings>
+      </ng-container>
+      <ng-container *ngIf="name == 'New Editor'">
+        <app-new-editor></app-new-editor>
+      </ng-container>
+      <ng-container *ngIf="name == 'About'">
+        <app-about></app-about>
+      </ng-container>
+    </div>
+  </div>
+</div>

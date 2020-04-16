@@ -1,0 +1,8 @@
+<div class="wrapper">
+  <ng-container *ngIf="cards.length > 0; else blank">
+    <app-card *ngFor="let item of cards" [details]="item"></app-card>
+  </ng-container>
+</div>
+<ng-template #blank>
+  <div class="header header--bad header--big">Nie masz edytorów!!!</div>
+</ng-template>

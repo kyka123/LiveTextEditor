@@ -1,0 +1,52 @@
+@import "../../styles/variables.scss";
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.board {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 80%;
+  height: 80%;
+
+  &__header {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__input {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    font-size: $font-big;
+    font-family: $font-family;
+    font-weight: bold;
+  }
+
+  &__settings {
+    position: absolute;
+    top: 130px;
+    left: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    width: 100px;
+    height: auto;
+    padding: 10px;
+    background-color: $color-third;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+  }
+}

@@ -1,0 +1,81 @@
+@import './styles/variables.scss';
+
+.btn {
+  padding: 15px;
+  border: none;
+  border-radius: 40px;
+  background-color: $color-primary;
+  color: #fff;
+  outline: none;
+  font-size: $font-small;
+
+  cursor: pointer;
+
+
+  &--light {
+    background-color: #fff;
+    color: $color-primary;
+  }
+
+  &--bad {
+    background-color: $color-secondary;
+    color: $color-primary;
+  }
+
+  &--small {
+    padding: 7px;
+    border-radius: 20px;
+    width: 90px;
+  }
+
+  &--image {
+    background-color: transparent;
+    border: none
+  }
+}
+
+.header {
+  font-size: $font-big;
+  color: $color-primary;
+
+  &--light {
+    color: #fff;
+  }
+
+  &--bad {
+    color: $color-secondary;
+  }
+
+  &--big {
+    font-size: 5rem;
+    width: 600px;
+  }
+
+  &--small {
+    font-size: $font-middle;
+  }
+}
+
+.input {
+  padding: 15px;
+  border: none;
+  border-radius: 40px;
+  font-size: $font-small;
+  outline: none;
+  color: $color-primary;
+  width: 100%;
+  max-width: 100%;
+  font-family: $font-family;
+
+  &--secondary {
+    background-color: $color-primary;
+    color: #fff;
+  }
+
+  &--big {
+    height: 200px;
+    width: 100%;
+    max-width: 100%;
+    resize: none;
+  }
+}

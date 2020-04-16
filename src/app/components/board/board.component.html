@@ -1,0 +1,10 @@
+<div class="wrapper">
+  <div class="board">
+    <h1 class="header header--bad header--big board__header">Title of this editor</h1>
+    <textarea class="input input--big board__input"></textarea>
+    <div class="board__settings">
+      <button (click)="toggleShare()" class="btn btn--image"><img src="assets/icons/Share.png" alt=""></button>
+    </div>
+  </div>
+  <app-alert-box (closed)="toggleShare()" [open]="isOpenShare"></app-alert-box>
+</div>
