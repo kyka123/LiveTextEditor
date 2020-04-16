@@ -1,5 +1,7 @@
 # LiveEditor
 
+Hello, I'm making this project for my mom, who's a schoolteacher. Unfortunately, I had to do the whole design myself. Frontent is in English because now I'm learning it, backend in nestJs and database in firebase.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.7.
 
 ## Development server
